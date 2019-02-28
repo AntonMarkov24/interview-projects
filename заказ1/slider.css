@@ -1,0 +1,100 @@
+    .slide {
+        position: absolute;
+        left:-37%;
+        position: relative;
+        text-align: center;
+    }
+	.slide  input {
+        display: none;
+    }
+
+    .slide  input + label {position: absolute;
+        left: 37%;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 8px;
+        background: rgba(90, 90, 90, 0.8);
+        border: 2px solid rgba(190, 190, 190, 0.8);
+
+        cursor: pointer;
+
+        z-index: 100;
+        position: relative;
+
+        margin-right: 4px;
+        top: 730px;
+
+        transition: background 0.8s ease-out 0s;
+    }
+
+    .slide  input + label:hover {
+        background: rgba(250, 250, 250, 0.8);
+    }
+
+    .slide  input:checked + label {
+        background: rgba(220, 220, 220, 0.8);
+    }
+	
+    .slide  div {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 0;
+    }
+	
+    .slide  div {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+    }
+
+    .slide img {
+        width:1041px;
+		height:754px;
+    }
+	
+    .slide  input:checked + label + div {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+    }
+	
+    .slide  div  p {
+        position: absolute;
+		font-size:18px;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 2px 2px 3px #222;
+    }
+	
+    .slide-btn
+	{position: absolute;
+	z-index: 200;
+	right: 20px;
+	top: 370px;
+	width: 23px;
+	height: 23px;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+	border-left: none;
+	border-bottom: none;
+	background-color: white;
+	outline: none;
+	transform: rotate(45deg);}
+	
+
+
+
+
+
+
+
+
+
+	
