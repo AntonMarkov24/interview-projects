@@ -1,0 +1,356 @@
+﻿<!DOCTYPE html>
+<html>
+<head>  
+<meta charset="utf-8">
+    <title>gllacy</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="ion.rangeSlider.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-1.12.3.min.js"></script>
+    <script src="ion.rangeSlider.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="proverka">
+</div>
+
+	<div class="header centre">
+		 <div class="logo">
+		 	<img src="Shape 149.png" alt="GlassyShop">
+		 </div>
+		 <div class="topInf">
+		 	<ul>
+		 		<li>
+		 			<button class="catalog">
+						<a href="#">Каталог</a>
+		 			</button>
+		 			<div class="catalogPopap">
+		 				<ul>
+		 					<li>
+								<a href="#">Новинки</a>
+							</li>
+		 					<li class="currentPageCatalog">
+								<a href="#">Сливочное</a>
+							</li>
+		 					<li>
+								<a href="#">Щербеты</a>
+							</li>
+		 					<li>
+								<a href="#">Фруктовый лед</a>
+							</li>
+		 					<li>
+								<a href="#">Мелорин</a>
+							</li>
+		 				</ul>
+		 			</div>
+		 		</li>
+		 		<li class="delivery">
+		 			<a href="#">Доставка и оплата</a>
+		 		</li>
+		 		<li class="company">
+		 			<a href="#">О Компании</a>
+		 		</li>
+		 	</ul>
+		 </div>
+		 <div class="headerButtons">
+		 	<button class="searchButton btn">
+		 	</button>
+			<div class="searchPopap">
+				<form action="" name="searchPopap" id="searchPopap">
+					<input type="text" placeholder="Что ищем?">
+				</form>
+			</div>
+		 	<div class="loginButton btn">
+		 		<a href="#">Вход</a>
+		 	</div>
+		 	<div class="loginPopap">
+		 		<form action="" name="loginPopap" id="loginPopap">
+		 			<input type="text" placeholder="Электронная почта">
+		 			<input type="text" placeholder="Пароль">
+		 			<input class="snap" type="submit" value="Войти">
+		 			<span>
+		 				<a href="#">забыли пароль?</a>
+		 			</span>
+		 			<span>
+		 				<a href="#">Новая регистрация</a>
+		 			</span>
+		 		</form>
+		 	</div>
+		 	<button class="basket btn">
+		 	<span class="numberOfGoods">2
+		 	</span>
+		 	<span>товара
+		 	</span>
+		 	</button>
+			<div class="basketPopap">
+				<div class="orangePlombirMin basketRow">
+					<button class="cross">
+					</button>
+					<div class="MinImg orangePlombir">
+					</div>
+					<span class="name">Пломбир с апельсиновым джемом
+					</span>
+					<span class="weightPrice">1,5кг x 200руб.
+					</span>
+					<span>300руб.
+					</span>
+				</div>
+				<div class="strawberryPlombirMin basketRow">
+					<button class="cross">
+					</button>
+					<div class="MinImg strawberryPlombir">
+					</div>
+					<span class="name">Клубничный плобир с присыпкой из белого шоколада
+					</span>
+					<span class="weightPrice">1,5кг x 300руб.
+					</span>
+					<span>450руб.
+					</span>
+				</div>
+				<div class="total">
+				<span>Итого:
+					<p>750
+					</p>
+					руб.
+				</span>
+				<button class="order">
+					<a href="#">Оформить заказ</a>
+				</button>
+				</div>
+			</div>
+		 </div>
+		 <p class="phone">С 10 до 20, ежедневно</p>
+		 <p class="phone namber">8 812 450-25-25</p>
+	</div>
+	<div class="nav centre">
+			<span class="searchTree">
+				<a href="#">Главная</a>
+				<p> » </p>
+				<a href="#">Каталог</a>
+				<p> » </p>
+				<p>Сливочное</p>
+			</span>
+			<h2>Сливочное мороженое</h2>
+		<div class="sortingOfIceCream">
+			<form action="" name="sortingOfIceCream" id="sortingOfIceCream">
+				<div class="popularity">
+					<span>Сортировка:</span>
+					<button class="popularityButton btn">по популярности
+						<div class="triangle">
+						<div>
+					</button>
+				</div>
+				<div class="price">
+					<span>Цена: <p>100</p> руб.- <p>500</p> руб.</span>
+						<div class="sliderConteiner">
+							<input type="text" id="example_id" name="example_name" value="">	
+						</div>
+				</div>
+				<div class="fatContent">
+					<span class="fat">Жирность:</span>
+					<div class="fatContentCheckbox btn">
+						<label>
+							<input type="radio" name="%" value="0%" checked>
+							<div class="visibleCheckbox">
+							</div>
+							<p>0%</p>
+						</label>
+						<label>
+							<input type="radio" name="%" value="10%">
+							<div class="visibleCheckbox">
+							</div>
+							<p>до 10%</p>
+						</label>
+						<label>
+							<input type="radio" name="%" value="30%">
+							<div class="visibleCheckbox">
+							</div>
+							<p>до 30%</p>
+						</label>
+						<label>
+							<input type="radio" name="%" value=">30%">
+							<div class="visibleCheckbox">
+							</div>
+							<p>выше 30%</p>
+						</label>
+					</div>
+				</div>
+				<div class="fillers">
+					<span>Наполнители:</span>
+					<div class="fillersCheckbox btn">
+						<label>
+							<input type="checkbox" name="fillers" value="chocolate" checked>
+							<div class="visibleFillersCheckbox">
+							</div>
+							<p>шоколадные</p>
+						</label>
+						<label>
+							<input type="checkbox" name="fillers" value="sugar powders" checked>
+							<div class="visibleFillersCheckbox">
+							</div>
+							<p>сахарные присыпки</p>
+						</label>
+						<label>
+							<input type="checkbox" name="fillers" value="fruit">
+							<div class="visibleFillersCheckbox">
+							</div>
+							<p>фрукты</p>
+						</label>
+						<label>
+							<input type="checkbox" name="fillers" value="syrups">
+							<div class="visibleFillersCheckbox">
+							</div>
+							<p>сиропы</p>
+						</label>
+						<label>
+							<input type="checkbox" name="fillers" value="jams">
+							<div class="visibleFillersCheckbox">
+							</div>
+							<p>джемы</p>
+						</label>
+					</div>
+				</div>
+				<input type="submit" name="submit" class="submit" value="Применить">
+			</form>
+		</div>
+	</div>
+	<div class="main centre">
+		<div class="IceCreamInf">
+			<div class="creamyOrangeJam IceCream">
+				<span>310
+				<div class="rub"></div> 
+				/кг</span>
+			</div>
+			<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+		</div>
+		<div class="IceCreamInf">
+			<div class="creamyCoffee IceCream">
+				<span>380
+				<div class="rub"></div> 
+				/кг</span>
+			</div>
+			<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+		</div>
+		<div class="IceCreamInf">
+			<div class="creamyStrawberry IceCream">
+				<span>355
+				<div class="rub"></div> 
+				/кг</span>
+			</div>
+			<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+		</div>
+		<div class="IceCreamInf">
+			<div class="cremeBrulee IceCream">
+				<span>415
+				<div class="rub"></div> 
+				/кг</span>
+			</div>
+			<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+		</div>
+		<div class="IceCreamInf">
+			<div class="creamyCowberry IceCream">
+				<span>325
+				<div class="rub"></div> 
+				/кг</span>
+			</div>
+			<a href="#">Сливочное с брусничным джемом</a>
+		</div>
+		<div class="IceCreamInf">
+			<div class="creamyBlueberry IceCream">
+				<span>410
+				<div class="rub"></div> 
+				/кг</span>
+			</div>
+			<a href="#">Сливочно-черничное с цельными ягодами черники</a>
+		</div>
+		<div class="IceCreamInf">
+			<div class="creamyLemon IceCream">
+				<span>375
+				<div class="rub"></div> 
+				/кг</span>
+			</div>
+			<a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+		</div>
+		<div class="IceCreamInf">
+			<div class="creamyWithChocolateChips IceCream">
+				<span>320
+				<div class="rub"></div> 
+				/кг</span>
+			</div>
+			<a href="#">Сливочное с шоколадной стружкой</a>
+		</div>
+		<div class="IceCreamInf">
+			<div class="creamyVanila IceCream">
+				<span>440
+				<div class="rub"></div> 
+				/кг</span>
+			</div>
+			<a href="#">Сливочно-ванильное с кусочками шоколада</a> 
+		</div>
+		<div class="IceCreamInf">
+			<div class="creamyMentholSyrup IceCream">
+				<span>435
+				<div class="rub"></div> 
+				/кг</span>
+			</div>
+			<a href="#">Сливочноe с ментоловым сиропом</a>
+		</div>
+		<div class="IceCreamInf">
+			<div class="creamyChocolate IceCream">
+				<span>355
+				<div class="rub"></div> 
+				/кг</span>
+			</div>
+			<a href="#">Сливочное с кусочками черного шоколада</a>
+		</div>
+		<div class="IceCreamInf">
+			<div class="creamyMintSyrup IceCream">
+				<span>420
+				<div class="rub"></div> 
+				/кг</span>
+			</div>
+			<a href="#">Сливочное с мятным сиропом</a>
+		</div>
+		<div class="pageNumbers">
+			<a href="#"><</a><!--
+		 --><a href="#">1</a><!--
+		 --><a href="#">2</a><!--
+		 --><a href="#">3</a><!--
+		 --><a href="#">4</a><!--
+		 --><a href="#">5</a><!--
+		 --><a href="#">></a>
+		</div>
+	</div>
+	<div class="footer centre">
+		<div class="socialNetworks">
+			<div class="tw sn">
+			</div>
+			<div class="inst sn">
+			</div>
+			<div class="fb sn">
+			</div>
+			<div class="vk sn">
+			</div>
+		</div>
+		<div class="bottomInf">
+			<a href="#">Для поставщиков</a>
+			<a href="#">Наши документы</a>
+			<a href="#">О производстве</a>
+			<a href="#">Экологические стандарты</a>
+			<div class="heart">
+			</div>
+		</div>
+		<div class="htmlAcademy">
+			<img class="htmlAcademyLogo" src="htmlAcademy.png" alt="htmlAcademy">
+			<p>Сделано в 
+			<a href="#">HTML Academy</a> 
+			© 2016</p>
+		</div>
+	</div>
+
+
+
+
+ </body>
+</html>
