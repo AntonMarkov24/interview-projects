@@ -1,90 +1,64 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>  
-<meta charset="utf-8">
-    <title>лава</title>
-    <link rel="stylesheet" href="oformlenie.css">
-</head>
-<body>
-<audio id="audio" autoplay src="m.mp3" loop>sss</audio>
+   <head>  
+      <meta charset="utf-8">
+      <title>лава</title>
+      <link rel="stylesheet" href="oformlenie.css">
+   </head>
+   <body>
+      <audio id="audio" autoplay src="m.mp3" loop>sss</audio>
 
-<audio id="zvuk" src="notify.mp3">sss</audio>
+      <audio id="zvuk" src="notify.mp3">sss</audio>
 
-<input class="pause" id="pause"  value="| |">
+      <input class="pause" id="pause"  value="| |">
 
-<button class="play" id="play">
+      <button class="play" id="play">
+         <div class="treugolnik" id="treugolnik">
+         </div>
+      </button>
 
-	<div class="treugolnik" id="treugolnik"></div>
-
-</button>
-
-<div class="lava" id="lava">
-
-	<div class="titri" id="titri">
-
-			<div class="block"><img class="foto" src="IMG_20171015_111404.jpg"></div>
-	</div>
-
-	<div class="arenabox">
-
-		<div class="arena" id="arena">
-		
-		<div class="Warlok" id="Warlok"></div>
-
-		<div class="vrag" id="vrag">
-				
-				<div class="vrag nogi" id="nogi"></div>
-				
-				<div class="vrag telo" id="telo"></div>
-
-				<div class="vrag golova" id="golova"></div>
-
-						
-				
-			</div>
-
-		</div>
-
-	</div>
-
-	<div class="score" id="score"></div>
-	
-</div>
-
-<div class="gameover" id="gameover">GAME OVER</div>
-
-
-<div class="obolochka" id="obolochka">
-	<input class="start" id="start" type="submit" value="start" >
-</div>
-
-<input class="easy" id="easy" type="submit" value="easy">
-
-<input class="hard" id="hard" type="submit" value="hard" >
-
-
-<div class="titriName" id="titriName">
-	<div class="dolgnosty">Технический директор: Главный разработчик: Тест качества:</div> 
-	<div class="anton">Антон Александрович</div>
-
-	<div class="konsultanti" id="konsultanti">технические консультанты:</div>
-	<div class="konsultantiName" id="konsultantiName">Сан Кирилл</div>
-</div>
-
-
-<script src="scriptonit2.js">
-</script>
-
-<script src="scriptonit3.js">
-</script>
-
-
-
- 
-
-
-
-
-
-    </body>
-    </html>
+      <div class="lava" id="lava">
+         <div class="titri" id="titri">
+            <div class="block"><img class="foto" src="IMG_20171015_111404.jpg">
+            </div>
+	 </div>
+         <div class="arenabox">
+            <div class="arena" id="arena">
+               <div class="Warlok" id="Warlok">
+               </div>
+               <div class="vrag" id="vrag">
+	          <div class="vrag nogi" id="nogi">
+                  </div>
+                  <div class="vrag telo" id="telo">
+                  </div>
+                  <div class="vrag golova" id="golova">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="score" id="score">
+         </div>
+      </div>
+      <div class="gameover" id="gameover">GAME OVER
+      </div>
+      <div class="obolochka" id="obolochka">
+	<input class="start" id="start" type="submit" value="start">
+      </div>
+      <input class="easy" id="easy" type="submit" value="easy">
+      <input class="hard" id="hard" type="submit" value="hard" >
+      <div class="titriName" id="titriName">
+         <div class="dolgnosty">Технический директор: Главный разработчик: Тест качества:
+         </div> 
+	 <div class="anton">Антон Александрович
+         </div>
+	 <div class="konsultanti" id="konsultanti">технические консультанты:
+         </div>
+	 <div class="konsultantiName" id="konsultantiName">Сан Кирилл
+         </div>
+      </div>
+      <script src="scriptonit2.js">
+      </script>
+      <script src="scriptonit3.js">
+      </script>
+   </body>
+   </html>
