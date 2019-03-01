@@ -1,5 +1,5 @@
 ﻿﻿
-var lava = document.querySelector('.lava');
+var drift = document.querySelector('.drift');
 
 var i = 0;
 var l, r, b;
@@ -12,52 +12,56 @@ var shag = 10;
 var slognost = 20;
 var iii = 0;
 
-var vragGranicaTop;
+var enemyGranicaTop;
 
-var vragDvigenieInterval;
-
-
-var vrag = document.getElementById("vrag");
-
-var vragStily = window.getComputedStyle(vrag);
-
-var koordinatavrag = parseInt(vragStily.left);
-
-var koordinatavragTop = parseInt(vragStily.top);
+var enemyDvigenieInterval;
 
 
-var nogi = document.getElementById("nogi");
+var enemy = document.getElementById("enemy");
 
-var nogiStily = window.getComputedStyle(nogi);
+var enemyStily = window.getComputedStyle(enemy);
 
-var nogiTop = parseInt(nogiStily.top);
+var koordinataenemy = parseInt(enemyStily.left);
 
-
-var telo = document.getElementById("telo");
-
-var teloStily = window.getComputedStyle(telo);
-
-var teloTop = parseInt(teloStily.top);
+var koordinataenemyTop = parseInt(enemyStily.top);
 
 
-var golova = document.getElementById("golova");
+var
+legs = document.getElementById("legs");
 
-var golovaStily = window.getComputedStyle(golova);
+var
+legsStily = window.getComputedStyle(legs);
 
-var golovaTop = parseInt(golovaStily.top);
+var
+legsTop = parseInt(
+legsStily.top);
 
-var golovaLeft = parseInt(golovaStily.left);
+
+var corpus = document.getElementById("corpus");
+
+var corpusStily = window.getComputedStyle(corpus);
+
+var corpusTop = parseInt(corpusStily.top);
+
+
+var brain = document.getElementById("brain");
+
+var brainStily = window.getComputedStyle(brain);
+
+var brainTop = parseInt(brainStily.top);
+
+var brainLeft = parseInt(brainStily.left);
 
 
 function f() {
 	var kartinka = 'url("img2.png")';
-	var gg = lava.style.backgroundImage;
+	var gg = drift.style.backgroundImage;
 
 	if (gg == kartinka)
-		lava.style.backgroundImage = "none";
+		drift.style.backgroundImage = "none";
 
 	else {
-		lava.style.backgroundImage = kartinka;
+		drift.style.backgroundImage = kartinka;
 	}
 }
 
@@ -91,73 +95,73 @@ hard.addEventListener('click', function () {
 
 function granica() {
 	if (r < 1) {
-		if (koordinatavragTop > 200) {
+		if (koordinataenemyTop > 200) {
 			a = 270;
 
-			vrag.style.transform = `rotate(${a}deg)`;
+			enemy.style.transform = `rotate(${a}deg)`;
 
-			vrag.style.top = koordinatavragTop + 105 + "px";
-			koordinatavragTop = koordinatavragTop + 105
+			enemy.style.top = koordinataenemyTop + 105 + "px";
+			koordinataenemyTop = koordinataenemyTop + 105
 		}
 
-		if (koordinatavragTop < -100) {
+		if (koordinataenemyTop < -100) {
 			a = 90;
 
-			vrag.style.transform = `rotate(${a}deg)`;
+			enemy.style.transform = `rotate(${a}deg)`;
 
-			vrag.style.top = koordinatavragTop - 105 + "px";
-			koordinatavragTop = koordinatavragTop - 105
+			enemy.style.top = koordinataenemyTop - 105 + "px";
+			koordinataenemyTop = koordinataenemyTop - 105
 		}
 
-		if (koordinatavrag > 500) {
+		if (koordinataenemy > 500) {
 			a = 180;
 
-			vrag.style.transform = `rotate(${a}deg)`;
+			enemy.style.transform = `rotate(${a}deg)`;
 
-			vrag.style.left = koordinatavrag + 105 + "px";
+			enemy.style.left = koordinataenemy + 105 + "px";
 
-			koordinatavrag = koordinatavrag + 105
+			koordinataenemy = koordinataenemy + 105
 		}
 
 
-		if (koordinatavrag < -100) {
+		if (koordinataenemy < -100) {
 			a = 0;
 
-			vrag.style.transform = `rotate(${a}deg)`;
+			enemy.style.transform = `rotate(${a}deg)`;
 
-			vrag.style.left = koordinatavrag - 105 + "px";
+			enemy.style.left = koordinataenemy - 105 + "px";
 
-			koordinatavrag = koordinatavrag - 105
+			koordinataenemy = koordinataenemy - 105
 		}
 
 	}
 
 	if (r >= 1) {
-		if (koordinatavragTop > 200) {
-			vrag.style.top = koordinatavragTop - 5 + "px";
+		if (koordinataenemyTop > 200) {
+			enemy.style.top = koordinataenemyTop - 5 + "px";
 
-			koordinatavragTop = koordinatavragTop - 5
+			koordinataenemyTop = koordinataenemyTop - 5
 		}
 
 
-		if (koordinatavragTop < -100) {
-			vrag.style.top = koordinatavragTop + 5 + "px";
+		if (koordinataenemyTop < -100) {
+			enemy.style.top = koordinataenemyTop + 5 + "px";
 
-			koordinatavragTop = koordinatavragTop + 5
+			koordinataenemyTop = koordinataenemyTop + 5
 		}
 
 
-		if (koordinatavrag > 500) {
-			vrag.style.left = koordinatavrag - 5 + "px";
+		if (koordinataenemy > 500) {
+			enemy.style.left = koordinataenemy - 5 + "px";
 
-			koordinatavrag = koordinatavrag - 5
+			koordinataenemy = koordinataenemy - 5
 		}
 
 
-		if (koordinatavrag < -100) {
-			vrag.style.left = koordinatavrag + 5 + "px";
+		if (koordinataenemy < -100) {
+			enemy.style.left = koordinataenemy + 5 + "px";
 
-			koordinatavrag = koordinatavrag + 5
+			koordinataenemy = koordinataenemy + 5
 		}
 
 	}
@@ -186,7 +190,7 @@ function jd() {
 
 	if (a == 0 || a == 360 || a == -360) {
 
-		if (left2 >= (koordinatavrag - 30) && left2 <= (koordinatavrag + 110) && tops2 >= koordinatavragTop && tops2 <= (koordinatavragTop + 60))
+		if (left2 >= (koordinataenemy - 30) && left2 <= (koordinataenemy + 110) && tops2 >= koordinataenemyTop && tops2 <= (koordinataenemyTop + 60))
 
 		{
 			ObektWarlok.style.backgroundColor = "black";
@@ -198,7 +202,7 @@ function jd() {
 
 	if (a == 90 || a == -270) {
 
-		if ((left2 + 10) >= (koordinatavrag - 30) && left2 <= (koordinatavrag + 10) && (tops2 - 20) >= koordinatavragTop && tops2 <= (koordinatavragTop + 160))
+		if ((left2 + 10) >= (koordinataenemy - 30) && left2 <= (koordinataenemy + 10) && (tops2 - 20) >= koordinataenemyTop && tops2 <= (koordinataenemyTop + 160))
 
 		{
 			ObektWarlok.style.backgroundColor = "black";
@@ -210,7 +214,7 @@ function jd() {
 
 	if (a == 180 || a == -180) {
 
-		if (left2 >= (koordinatavrag - 150) && left2 <= (koordinatavrag) && tops2 >= koordinatavragTop && tops2 <= (koordinatavragTop + 60))
+		if (left2 >= (koordinataenemy - 150) && left2 <= (koordinataenemy) && tops2 >= koordinataenemyTop && tops2 <= (koordinataenemyTop + 60))
 
 		{
 			ObektWarlok.style.backgroundColor = "black";
@@ -222,7 +226,7 @@ function jd() {
 
 	if (a == 270 || a == -90) {
 
-		if ((left2 + 10) >= (koordinatavrag - 30) && left2 <= (koordinatavrag + 10) && (tops2) >= (koordinatavragTop - 100) && tops2 <= (koordinatavragTop + 40))
+		if ((left2 + 10) >= (koordinataenemy - 30) && left2 <= (koordinataenemy + 10) && (tops2) >= (koordinataenemyTop - 100) && tops2 <= (koordinataenemyTop + 40))
 
 		{
 			ObektWarlok.style.backgroundColor = "black";
@@ -232,35 +236,35 @@ function jd() {
 	}
 
 
-	if (koordinatavragTop > 200 || koordinatavragTop < -100 || koordinatavrag > 500 || koordinatavrag < -100) granica();
+	if (koordinataenemyTop > 200 || koordinataenemyTop < -100 || koordinataenemy > 500 || koordinataenemy < -100) granica();
 
 	else {
 
-		if (i < 1) dvigenieVraga();
+		if (i < 1) dvigenieenemya();
 
 		if (i >= 1) {
 			if (a == 90 || a == -270) {
-				vrag.style.top = koordinatavragTop + 5 + "px";
+				enemy.style.top = koordinataenemyTop + 5 + "px";
 
-				koordinatavragTop = koordinatavragTop + 5
+				koordinataenemyTop = koordinataenemyTop + 5
 			}
 
 			if (a == 180 || a == -180) {
-				vrag.style.left = koordinatavrag - 5 + "px";
+				enemy.style.left = koordinataenemy - 5 + "px";
 
-				koordinatavrag = koordinatavrag - 5
+				koordinataenemy = koordinataenemy - 5
 			}
 
 			if (a == 270 || a == -90) {
-				vrag.style.top = koordinatavragTop - 5 + "px";
+				enemy.style.top = koordinataenemyTop - 5 + "px";
 
-				koordinatavragTop = koordinatavragTop - 5
+				koordinataenemyTop = koordinataenemyTop - 5
 			}
 
 			if (a == 360 || a == -360 || a == 0) {
-				vrag.style.left = koordinatavrag + 5 + "px";
+				enemy.style.left = koordinataenemy + 5 + "px";
 
-				koordinatavrag = koordinatavrag + 5
+				koordinataenemy = koordinataenemy + 5
 			}
 
 		}
@@ -268,7 +272,7 @@ function jd() {
 
 		i = i + 1;
 		if (i >= 6) {
-			clearInterval(vragDvigenieInterval);
+			clearInterval(enemyDvigenieInterval);
 
 			rand()
 		}
@@ -278,69 +282,69 @@ function jd() {
 }
 
 
-function dvigenieVraga() {
+function dvigenieenemya() {
 	t = a;
 
 	a = a + 90;
 
-	vrag.style.transform = `rotate(${a}deg)`;
+	enemy.style.transform = `rotate(${a}deg)`;
 
 
 	if (t == 90 || t == -270) {
-		vrag.style.top = koordinatavragTop + 105 + "px";
-		koordinatavragTop = koordinatavragTop + 105
+		enemy.style.top = koordinataenemyTop + 105 + "px";
+		koordinataenemyTop = koordinataenemyTop + 105
 	}
 
 
 	if (t == 180 || t == -180) {
-		vrag.style.left = koordinatavrag - 105 + "px";
-		koordinatavrag = koordinatavrag - 105
+		enemy.style.left = koordinataenemy - 105 + "px";
+		koordinataenemy = koordinataenemy - 105
 	}
 
 
 	if (t == 270 || t == -90) {
-		vrag.style.top = koordinatavragTop - 105 + "px";
-		koordinatavragTop = koordinatavragTop - 105
+		enemy.style.top = koordinataenemyTop - 105 + "px";
+		koordinataenemyTop = koordinataenemyTop - 105
 	}
 
 
 	if (t == 360 || t == -360 || t == 0) {
-		vrag.style.left = koordinatavrag + 105 + "px";
-		koordinatavrag = koordinatavrag + 105
+		enemy.style.left = koordinataenemy + 105 + "px";
+		koordinataenemy = koordinataenemy + 105
 	}
 
 }
 
 
-function dvigenieVraga2() {
+function dvigenieenemya2() {
 	t = a;
 
 	a = a - 90;
 
-	vrag.style.transform = `rotate(${a}deg)`
+	enemy.style.transform = `rotate(${a}deg)`
 
 
 	if (t == 90 || t == -270) {
-		vrag.style.top = koordinatavragTop + 105 + "px";
-		koordinatavragTop = koordinatavragTop + 105
+		enemy.style.top = koordinataenemyTop + 105 + "px";
+		koordinataenemyTop = koordinataenemyTop + 105
 	}
 
 
 	if (t == 180 || t == -180) {
-		vrag.style.left = koordinatavrag - 105 + "px";
-		koordinatavrag = koordinatavrag - 105
+		enemy.style.left = koordinataenemy - 105 + "px";
+		koordinataenemy = koordinataenemy - 105
 	}
 
 
 	if (t == 270 || t == -90) {
-		vrag.style.top = koordinatavragTop - 105 + "px";
-		koordinatavragTop = koordinatavragTop - 105
+		enemy.style.top = koordinataenemyTop - 105 + "px";
+		koordinataenemyTop = koordinataenemyTop - 105
 	}
 
 
 	if (t == 360 || t == -360 || t == 0) {
-		vrag.style.left = koordinatavrag + 105 + "px";
-		koordinatavrag = koordinatavrag + 105
+		enemy.style.left = koordinataenemy + 105 + "px";
+		koordinataenemy = koordinataenemy + 105
 	}
 
 }
@@ -363,7 +367,7 @@ function jp() {
 
 	if (a == 0 || a == 360 || a == -360) {
 
-		if (left2 >= (koordinatavrag - 30) && left2 <= (koordinatavrag + 110) && tops2 >= koordinatavragTop && tops2 <= (koordinatavragTop + 60))
+		if (left2 >= (koordinataenemy - 30) && left2 <= (koordinataenemy + 110) && tops2 >= koordinataenemyTop && tops2 <= (koordinataenemyTop + 60))
 
 		{
 			ObektWarlok.style.backgroundColor = "black";
@@ -375,7 +379,7 @@ function jp() {
 
 	if (a == 90 || a == -270) {
 
-		if ((left2 + 10) >= (koordinatavrag - 30) && left2 <= (koordinatavrag + 10) && (tops2 - 20) >= koordinatavragTop && tops2 <= (koordinatavragTop + 160))
+		if ((left2 + 10) >= (koordinataenemy - 30) && left2 <= (koordinataenemy + 10) && (tops2 - 20) >= koordinataenemyTop && tops2 <= (koordinataenemyTop + 160))
 
 		{
 			ObektWarlok.style.backgroundColor = "black";
@@ -387,7 +391,7 @@ function jp() {
 
 	if (a == 180 || a == -180) {
 
-		if (left2 >= (koordinatavrag - 150) && left2 <= (koordinatavrag) && tops2 >= koordinatavragTop && tops2 <= (koordinatavragTop + 60))
+		if (left2 >= (koordinataenemy - 150) && left2 <= (koordinataenemy) && tops2 >= koordinataenemyTop && tops2 <= (koordinataenemyTop + 60))
 
 		{
 			ObektWarlok.style.backgroundColor = "black";
@@ -399,7 +403,7 @@ function jp() {
 
 	if (a == 270 || a == -90) {
 
-		if ((left2 + 10) >= (koordinatavrag - 30) && left2 <= (koordinatavrag + 10) && (tops2) >= (koordinatavragTop - 100) && tops2 <= (koordinatavragTop + 40))
+		if ((left2 + 10) >= (koordinataenemy - 30) && left2 <= (koordinataenemy + 10) && (tops2) >= (koordinataenemyTop - 100) && tops2 <= (koordinataenemyTop + 40))
 
 		{
 			ObektWarlok.style.backgroundColor = "black";
@@ -409,37 +413,37 @@ function jp() {
 	}
 
 
-	if (koordinatavragTop > 200 || koordinatavragTop < -100 || koordinatavrag > 500 || koordinatavrag < -100) granica();
+	if (koordinataenemyTop > 200 || koordinataenemyTop < -100 || koordinataenemy > 500 || koordinataenemy < -100) granica();
 
 	else {
 
 		if (a == 90 || a == -270) {
-			vrag.style.top = koordinatavragTop + 5 + "px";
+			enemy.style.top = koordinataenemyTop + 5 + "px";
 
-			koordinatavragTop = koordinatavragTop + 5
+			koordinataenemyTop = koordinataenemyTop + 5
 		}
 
 		if (a == 180 || a == -180) {
-			vrag.style.left = koordinatavrag - 5 + "px";
+			enemy.style.left = koordinataenemy - 5 + "px";
 
-			koordinatavrag = koordinatavrag - 5
+			koordinataenemy = koordinataenemy - 5
 		}
 
 		if (a == 270 || a == -90) {
-			vrag.style.top = koordinatavragTop - 5 + "px";
+			enemy.style.top = koordinataenemyTop - 5 + "px";
 
-			koordinatavragTop = koordinatavragTop - 5
+			koordinataenemyTop = koordinataenemyTop - 5
 		}
 
 		if (a == 360 || a == -360 || a == 0) {
-			vrag.style.left = koordinatavrag + 5 + "px";
+			enemy.style.left = koordinataenemy + 5 + "px";
 
-			koordinatavrag = koordinatavrag + 5
+			koordinataenemy = koordinataenemy + 5
 		}
 
 		i = i + 1;
 		if (i >= 5) {
-			clearInterval(vragDvigenieInterval);
+			clearInterval(enemyDvigenieInterval);
 
 			rand()
 		}
@@ -466,7 +470,7 @@ function jl() {
 
 	if (a == 0 || a == 360 || a == -360) {
 
-		if (left2 >= (koordinatavrag - 30) && left2 <= (koordinatavrag + 110) && tops2 >= koordinatavragTop && tops2 <= (koordinatavragTop + 60))
+		if (left2 >= (koordinataenemy - 30) && left2 <= (koordinataenemy + 110) && tops2 >= koordinataenemyTop && tops2 <= (koordinataenemyTop + 60))
 
 		{
 			ObektWarlok.style.backgroundColor = "black";
@@ -478,7 +482,7 @@ function jl() {
 
 	if (a == 90 || a == -270) {
 
-		if ((left2 + 10) >= (koordinatavrag - 30) && left2 <= (koordinatavrag + 10) && (tops2 - 20) >= koordinatavragTop && tops2 <= (koordinatavragTop + 160))
+		if ((left2 + 10) >= (koordinataenemy - 30) && left2 <= (koordinataenemy + 10) && (tops2 - 20) >= koordinataenemyTop && tops2 <= (koordinataenemyTop + 160))
 
 		{
 			ObektWarlok.style.backgroundColor = "black";
@@ -490,7 +494,7 @@ function jl() {
 
 	if (a == 180 || a == -180) {
 
-		if (left2 >= (koordinatavrag - 150) && left2 <= (koordinatavrag) && tops2 >= koordinatavragTop && tops2 <= (koordinatavragTop + 60))
+		if (left2 >= (koordinataenemy - 150) && left2 <= (koordinataenemy) && tops2 >= koordinataenemyTop && tops2 <= (koordinataenemyTop + 60))
 
 		{
 			ObektWarlok.style.backgroundColor = "black";
@@ -502,7 +506,7 @@ function jl() {
 
 	if (a == 270 || a == -90) {
 
-		if ((left2 + 10) >= (koordinatavrag - 30) && left2 <= (koordinatavrag + 10) && (tops2) >= (koordinatavragTop - 100) && tops2 <= (koordinatavragTop + 40))
+		if ((left2 + 10) >= (koordinataenemy - 30) && left2 <= (koordinataenemy + 10) && (tops2) >= (koordinataenemyTop - 100) && tops2 <= (koordinataenemyTop + 40))
 
 		{
 			ObektWarlok.style.backgroundColor = "black";
@@ -512,41 +516,41 @@ function jl() {
 	}
 
 
-	if (koordinatavragTop > 200 || koordinatavragTop < -100 || koordinatavrag > 500 || koordinatavrag < -100) granica();
+	if (koordinataenemyTop > 200 || koordinataenemyTop < -100 || koordinataenemy > 500 || koordinataenemy < -100) granica();
 
 	else {
 
-		if (i < 1) dvigenieVraga2();
+		if (i < 1) dvigenieenemya2();
 
 		if (i >= 1) {
 			if (a == 90 || a == -270) {
-				vrag.style.top = koordinatavragTop + 5 + "px";
+				enemy.style.top = koordinataenemyTop + 5 + "px";
 
-				koordinatavragTop = koordinatavragTop + 5
+				koordinataenemyTop = koordinataenemyTop + 5
 			}
 
 			if (a == 180 || a == -180) {
-				vrag.style.left = koordinatavrag - 5 + "px";
+				enemy.style.left = koordinataenemy - 5 + "px";
 
-				koordinatavrag = koordinatavrag - 5
+				koordinataenemy = koordinataenemy - 5
 			}
 
 			if (a == 270 || a == -90) {
-				vrag.style.top = koordinatavragTop - 5 + "px";
+				enemy.style.top = koordinataenemyTop - 5 + "px";
 
-				koordinatavragTop = koordinatavragTop - 5
+				koordinataenemyTop = koordinataenemyTop - 5
 			}
 
 			if (a == 360 || a == -360 || a == 0) {
-				vrag.style.left = koordinatavrag + 5 + "px";
+				enemy.style.left = koordinataenemy + 5 + "px";
 
-				koordinatavrag = koordinatavrag + 5
+				koordinataenemy = koordinataenemy + 5
 			}
 
 		}
 		i = i + 1;
 		if (i >= 6) {
-			clearInterval(vragDvigenieInterval);
+			clearInterval(enemyDvigenieInterval);
 
 			rand()
 		}
@@ -570,15 +574,15 @@ function rand() {
 
 
 	if (kudaIdti > 0 && kudaIdti <= 0.3) {
-		vragDvigenieInterval = setInterval(jd, slognost)
+		enemyDvigenieInterval = setInterval(jd, slognost)
 	}
 
 	if (kudaIdti > 0.3 && kudaIdti <= 0.7) {
-		vragDvigenieInterval = setInterval(jp, slognost)
+		enemyDvigenieInterval = setInterval(jp, slognost)
 	}
 
 	if (kudaIdti > 0.7 && kudaIdti <= 1) {
-		vragDvigenieInterval = setInterval(jl, slognost)
+		enemyDvigenieInterval = setInterval(jl, slognost)
 	}
 
 }
@@ -794,26 +798,26 @@ function score() {
 
 	var KoordinataWarloka = window.getComputedStyle(ObektWarlok);
 
-	var titri = document.getElementById("titri");
+	var captions = document.getElementById("captions");
 
-	var titriStyle = window.getComputedStyle(titri);
+	var captionsStyle = window.getComputedStyle(captions);
 
 	var gameover = document.getElementById("gameover");
 
 	var stilygameover = window.getComputedStyle(gameover);
 
-	var titriName = document.getElementById("titriName");
+	var captionsName = document.getElementById("captionsName");
 
-	var titriNameStyle = window.getComputedStyle(titriName);
+	var captionsNameStyle = window.getComputedStyle(captionsName);
 
 
-	var konsultanti = document.getElementById("konsultanti");
+	var adviser = document.getElementById("adviser");
 
-	var konsultantiStyle = window.getComputedStyle(konsultanti);
+	var adviserStyle = window.getComputedStyle(adviser);
 
-	var konsultantiName = document.getElementById("konsultantiName");
+	var adviserName = document.getElementById("adviserName");
 
-	var konsultantiNameStyle = window.getComputedStyle(konsultantiName);
+	var adviserNameStyle = window.getComputedStyle(adviserName);
 
 
 	console.log(r);
@@ -832,21 +836,21 @@ function score() {
 
 		gameover.style.zIndex = 0;
 
-		titri.style.zIndex = 2001;
+		captions.style.zIndex = 2001;
 
 
 		if (iii < 11) {
-			titri.style.opacity = iii / 10
+			captions.style.opacity = iii / 10
 		}
 
 		if (iii == 11) {
-			titriName.style.opacity = 1
+			captionsName.style.opacity = 1
 		}
 
 		if (iii == 14) {
-			konsultanti.style.opacity = 1;
+			adviser.style.opacity = 1;
 
-			konsultantiName.style.opacity = 1
+			adviserName.style.opacity = 1
 		}
 
 		if (iii >= 15) {

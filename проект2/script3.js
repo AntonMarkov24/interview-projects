@@ -10,9 +10,9 @@ var start = document.getElementById("start");
 
 var startStyle = window.getComputedStyle(start);
 
-var obolochka = document.getElementById("obolochka");
+var shell = document.getElementById("shell");
 
-var obolochkaStyle = window.getComputedStyle(obolochka);
+var shellStyle = window.getComputedStyle(shell);
 
 
 start.addEventListener('click', function loadScript() {
@@ -23,7 +23,7 @@ start.addEventListener('click', function loadScript() {
 
 		start.style.right = 1 + "px";
 
-		obolochka.style.boxShadow = "none";
+		shell.style.boxShadow = "none";
 
 		setTimeout(zadergka, 1000)
 	}

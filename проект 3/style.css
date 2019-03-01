@@ -36,7 +36,7 @@ input::-webkit-input-placeholder {
 	font-weight: normal !important;
 }
 
-.proverk {
+.check {
 	position: absolute;
 	left: 50%;
 	background: url(img/gllacy-catalog-900.png) no-repeat;

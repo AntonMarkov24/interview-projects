@@ -6,7 +6,7 @@
 	padding: 0px;
 }
 
-.lava {
+.drift {
 	background: url("img2.png");
 	background-size: 10px;
 	height: 98vh;
@@ -74,7 +74,7 @@
 	font-family: lucida console;
 }
 
-.vrag {
+.enemy {
 	position: relative;
 	z-index: 1000;
 	left: 200px;
@@ -84,7 +84,7 @@
 	transform: rotate(0deg);
 }
 
-.nogi {
+.legs {
 	position: relative;
 	display: inline-block;
 	z-index: 1000;
@@ -96,7 +96,7 @@
 	top: 0px;
 }
 
-.telo {
+.corpus {
 	position: relative;
 	display: inline-block;
 	z-index: 1000;
@@ -108,7 +108,7 @@
 	top: -34px;
 }
 
-.golova {
+.brain {
 	position: relative;
 	display: inline-block;
 	z-index: 1000;
@@ -143,7 +143,7 @@
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#249ee4), to(#057cc0));
 }
 
-.obolochka {
+.shell {
 	position: absolute;
 	z-index: 2001;
 	height: 80px;
@@ -186,7 +186,7 @@
 	font-size: 25px;
 }
 
-.titri {
+.captions {
 	position: absolute;
 	z-index: 1;
 	opacity: 0;
@@ -206,7 +206,7 @@
 	height: 98vh;
 }
 
-.titriName {
+.captionsName {
 	position: absolute;
 	top: 100px;
 	right: 310px;
@@ -225,19 +225,19 @@
 	margin-top: 43px;
 }
 
-.dolgnosty {
+.post {
 	float: left;
 	width: 370px;
 	margin-bottom: 110px;
 }
 
-.konsultanti {
+.adviser {
 	opacity: 0;
 	float: left;
 	margin-top: 50px;
 }
 
-.konsultantiName {
+.adviserName {
 	opacity: 0;
 	line-height: 80px;
 	float: right;
@@ -270,7 +270,7 @@
 	border: 1px solid black;
 }
 
-.treugolnik {
+.triangle {
 	width: 0;
 	height: 0;
 	border-top: 13px solid transparent;
