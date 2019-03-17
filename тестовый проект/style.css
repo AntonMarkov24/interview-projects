@@ -26,9 +26,9 @@ a {
 .logo-container {
 	display: flex;
 	flex-shrink: 0;
-	width: 205px;
+	width: 206px;
 	height: 127px;
-	border-right: 2px solid black;
+	border-right: 1px solid black;
 }
 
 .page-header_logo {
@@ -70,8 +70,8 @@ a {
 	flex-grow: 1;
 	font-size: 18px;
 	max-width: 1195px;
-	height: 79px;
-	border-top: 2px solid black;
+	height: 80px;
+	border-top: 1px solid black;
 }
 
 
@@ -131,9 +131,14 @@ a {
 
 .swiper-container {
 	position: absolute;
+	left:50%;
+	margin-left: -960px;
 	z-index: 1;
-	left: 0;
-	top: -127px;
+	top: 0;
+}
+
+.page-main {
+	margin-top: 633px;
 }
 
 .page-main_logo {
@@ -147,8 +152,46 @@ a {
 .page-main_inf {
 	display: block;
 	margin: 0 auto;
+	margin-top: 29px;
+	padding-top: 40px;
+	padding-left: 279px;
+	padding-right: 279px;
 	width: 842px;
 	text-align: center;
 	font-size: 20px;
 	font-family: Marmelad;
+	border-top: 1px dotted #707070;
 } 
+
+.page-main_consultation {
+	margin: 0 auto;
+	margin-top: 56px;
+	padding-top: 11px;
+	width: 933px;
+}
+
+.page-main_consultation a:nth-child(1) {
+	display: block;
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.page-main_consultation a:nth-child(2) {
+	display: block;
+	float: right;
+	background-color: #FE4124;
+	width: 206px;
+	height: 32px;
+	margin-top: -30px;
+	padding-left: 28px;
+	padding-top: 12px;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.swiper-container2 {
+	width: 933px;
+	height: 427px;
+}
