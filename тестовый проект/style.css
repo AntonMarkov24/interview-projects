@@ -1,0 +1,154 @@
+
+ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.page-header {
+	position: relative;
+	z-index: 2;
+	margin: 0 auto;
+	width: 1400px;
+	height: 127px;
+	display: flex;
+	background-color: #313E47;
+	color: white;
+
+}
+
+.logo-container {
+	display: flex;
+	flex-shrink: 0;
+	width: 205px;
+	height: 127px;
+	border-right: 2px solid black;
+}
+
+.page-header_logo {
+	display: flex;
+	margin: auto auto;
+	background: url(img/Group3402.png) no-repeat;
+	width: 149px;
+	height: 91px;
+}
+
+.header-inf {
+	display: flex;
+	flex-grow: 1;
+	height: 33px;
+	padding-top: 13px;
+	font-family: 'Sans Serif',  Gilroy;
+	font-size: 15px;
+}
+
+.header-inf li:nth-child(1) {
+	padding-left: 45px;
+	padding-right: 62px;
+}
+
+.header-inf li:nth-child(2) {
+	padding-right: 381px;
+}
+
+.header-inf li:nth-child(3) {
+	padding-right: 36px;
+	font-weight: bold;
+}
+
+.header-inf li:nth-child(4) {
+    font-weight: bold;
+}
+.main-nav {
+	display: flex;
+	flex-grow: 1;
+	font-size: 18px;
+	max-width: 1195px;
+	height: 79px;
+	border-top: 2px solid black;
+}
+
+
+.main-nav a {
+	display: block;	
+}
+
+.main-nav li:nth-child(1) {
+	padding-top: 30px;
+	padding-left: 45px;
+	display: flex;
+	width: 215px;
+}
+
+.main-nav li:nth-child(2) {
+	width: 136px;
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
+.main-nav li:nth-child(3) {
+	width: 173px;
+	padding-top: 30px;
+	padding-left: 26px;
+}
+
+.main-nav li:nth-child(4) {
+	width: 115px;
+	padding-top: 30px;
+	padding-left: 45px;
+}
+
+.main-nav li:nth-child(5) {
+	width: 129px;
+	padding-top: 30px;
+	padding-left: 36px;
+}
+
+.main-nav li:nth-child(6) {
+	width: 197px;
+	background-color: #FE4124;
+	padding-top: 30px;
+	padding-left: 46px;
+}
+
+.header-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.last-news {
+	position: absolute;
+	bottom: -20px;
+	right: 0;
+	color: blue;
+}
+
+.swiper-container {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: -127px;
+}
+
+.page-main_logo {
+	margin: 0 auto;
+	margin-top;
+	background: url(img/2.png) no-repeat;
+	width: 395px;
+	height: 58px;
+}
+
+.page-main_inf {
+	display: block;
+	margin: 0 auto;
+	width: 842px;
+	text-align: center;
+	font-size: 20px;
+	font-family: Marmelad;
+} 
