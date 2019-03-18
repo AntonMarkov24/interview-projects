@@ -79,6 +79,10 @@ a {
 	display: block;	
 }
 
+.main-nav li {
+        position: relative;
+}
+
 .main-nav li:nth-child(1) {
 	padding-top: 30px;
 	padding-left: 45px;
@@ -191,7 +195,26 @@ a {
 	font-weight: bold;
 }
 
-.swiper-container2 {
+.swiper-container2,
+.swiper-container3 {
+	position: relative;
+
+	margin: 0 auto;
 	width: 933px;
 	height: 427px;
+}
+
+.PopapBtn {
+        position: absolute;
+        z-index: 3;
+	right: 42px;
+	top: 30px;
+	width: 12px;
+	height: 12px;
+	border-top: 2px solid white;
+	border-right: 2px solid white;
+	border-left: none;
+	border-bottom: none;
+	outline: none;
+	transform: rotate(135deg);
 }
