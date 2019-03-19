@@ -341,7 +341,80 @@ a {
 .programs_search {
 	width: 1400px;
 	height: 85px;
+	margin: 0 auto;
+	margin-top: 130px;
+	margin-bottom: 26px;
 	background-color: #313E47;
+}
+
+.programs_search li {
+	position: relative;
+	width: 216px;
+	border-right: 1px solid black;
+	padding-top: 30px;
+	padding-left: 33px;
+}
+
+.programs_search li:nth-child(6) {
+	padding-left: 0px;
+	background-color: #FE4124;
+	border: none;
+	text-align: center;
+}
+
+.programs_search a {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Sans Serif', Gotham Pro;
+}
+    
+.programs_cards {
+	width: 1400px;
+	height: 257px;
+	margin: 0 auto;
+}
+
+.programs_cards li {
+	height: 257px;
+	width: 234px;
+	padding-top: 46px;
+	padding-left: 33px;
+	padding-right: 58px;
+}
+
+.programs_cards li:nth-child(1),
+.programs_cards li:nth-child(2) {
+	background-color: #FE4124;
+}
+
+.programs_cards li:nth-child(3),
+.programs_cards li:nth-child(4) {
+	background-color: #313E47;
+}
+
+.programs_cards li:nth-child(5),
+.programs_cards li:nth-child(6) {
+	background-color: white;
+}
+
+.programs_cards li:nth-child(1),
+.programs_cards li:nth-child(3) {
+	font-size: 25px;
+	font-family: 'Marmelad Regular', Marmelad;
+}
+
+.programs_cards li:nth-child(2),
+.programs_cards li:nth-child(4) {
+	font-size: 15px;
+	font-family: 'Cera Round Pro', Cera Round Pro DEMO;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.programs_cards span {
+	font-size: 13px;
+	font-family: 'Cera Round Pro', Cera Round Pro DEMO;
+	color: white;
 }
 
 .PopapBtn {
@@ -359,6 +432,20 @@ a {
 	transform: rotate(135deg);
 }
 
+.programs_PopapBtn {
+    position: absolute;
+    z-index: 3;
+	right: 32px;
+	top: 32px;
+	width: 9px;
+	height: 9px;
+	border-top: 2px solid white;
+	border-right: 2px solid white;
+	border-left: none;
+	border-bottom: none;
+	outline: none;
+	transform: rotate(135deg);
+}
 
 .page-footer {
 	width: 1400px;
