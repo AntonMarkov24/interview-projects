@@ -69,6 +69,23 @@ a {
     font-weight: bold;
 }
 
+.trainingCourses_Popap {
+        display: none;
+        width: 130px;
+        height: 200px;
+        margin-top: 15px;
+        background-color: #313E47;
+        border: 2px solid black;
+}
+
+.PopapBtn:hover {
+        background-color: white;
+}
+
+.trainingCourses_PopapOpen {
+        display: block;
+}
+
 .page-main_infcards {
 	position: relative;
 	width: 1400px;
@@ -118,7 +135,7 @@ a {
 	padding-top: 32px;
 	padding-left: 35px;
 	padding-bottom: 19px;
-    padding-right: 65px;
+        padding-right: 65px;
 	font-size: 20px;
 	font-family: 'Marmelad Regular' Marmelad;
 	color: white;
@@ -380,6 +397,7 @@ a {
 	padding-top: 46px;
 	padding-left: 33px;
 	padding-right: 58px;
+        color: white;
 }
 
 .programs_cards li:nth-child(1),
@@ -390,11 +408,6 @@ a {
 .programs_cards li:nth-child(3),
 .programs_cards li:nth-child(4) {
 	background-color: #313E47;
-}
-
-.programs_cards li:nth-child(5),
-.programs_cards li:nth-child(6) {
-	background-color: white;
 }
 
 .programs_cards li:nth-child(1),
@@ -411,10 +424,36 @@ a {
 	line-height: 30px;
 }
 
+.programs_cards li:nth-child(5),
+.programs_cards li:nth-child(6) {
+        background-color: white;
+        font-size: 25px;
+	font-family: 'Marmelad Regular', Marmelad;
+        color: black;
+}
+
+.programs_cards a {
+        color: inherit;
+}
+
 .programs_cards span {
+        display: block;
+        padding-top: 10px;
+        margin-top: 10px;
+        border-top: 1px dotted #707070;
 	font-size: 13px;
 	font-family: 'Cera Round Pro', Cera Round Pro DEMO;
+        line-height: 20px;
 	color: white;
+}
+
+#programs-cards_text6 {
+        color: black;   
+}
+
+.programs_icon {
+        width: 1400px;
+        margin: 0 auto; 
 }
 
 .PopapBtn {
@@ -452,3 +491,9 @@ a {
 	height: 500px;
 	background-color: #9FA3A5;
 }
+
+.page-footer_CN {
+       background: url(img/10.png) no-repeat;
+}
+
+
