@@ -389,6 +389,7 @@ a {
 	width: 1400px;
 	height: 257px;
 	margin: 0 auto;
+	padding-bottom: 46px
 }
 
 .programs_cards li {
@@ -397,7 +398,7 @@ a {
 	padding-top: 46px;
 	padding-left: 33px;
 	padding-right: 58px;
-        color: white;
+    color: white;
 }
 
 .programs_cards li:nth-child(1),
@@ -426,10 +427,10 @@ a {
 
 .programs_cards li:nth-child(5),
 .programs_cards li:nth-child(6) {
-        background-color: white;
-        font-size: 25px;
+    background-color: white;
+    font-size: 25px;
 	font-family: 'Marmelad Regular', Marmelad;
-        color: black;
+    color: black;
 }
 
 .programs_cards a {
@@ -437,13 +438,13 @@ a {
 }
 
 .programs_cards span {
-        display: block;
-        padding-top: 10px;
-        margin-top: 10px;
-        border-top: 1px dotted #707070;
+    display: block;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px dotted #707070;
 	font-size: 13px;
 	font-family: 'Cera Round Pro', Cera Round Pro DEMO;
-        line-height: 20px;
+    line-height: 20px;
 	color: white;
 }
 
@@ -484,6 +485,136 @@ a {
 	border-bottom: none;
 	outline: none;
 	transform: rotate(135deg);
+}
+
+.page-main_news {
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+    margin-top: 56px;
+    margin-bottom: 53px;
+}
+
+.news_container {
+	padding-left: 24px;
+	padding-right: 82px;
+	width: 360px;
+}
+
+.news_container a {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 27px;
+	font-family: 'Marmelad Regular', Marmelad;
+	color: #FF2200;
+}
+
+.news_text {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-family: 'Cera Round Pro', Cera Round Pro DEMO;
+	color: #1E1E1E;
+}
+
+.news_date {
+	width: 132px;
+	height: 16px;
+	font-size: 15px;
+	font-family: 'Cera Round Pro', Cera Round Pro DEMO;
+	color: #1E1E1E;
+}
+
+.date_ikon {
+	display: inline-block;
+	margin-right: 16px;
+	background: url(img/11.png) no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+.news_date span {
+	display: inline-block;
+	height: 16px;
+	vertical-align: top;
+}
+
+.page-main_poster {
+	display: flex;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.poster-cards_conteiner {
+    width: 222px;
+    min-height: 171px;
+    padding-top: 21px;
+    padding-left: 24px;
+    padding-right: 34px;
+}
+
+.poster-cards_conteiner a {
+	font-size: 17px;
+	font-family: 'Sans Serif',  Gilroy;
+	font-weight: bold;
+	color: #1E1E1E;
+}
+
+.poster-cards_city {
+	display: block;
+	margin-top: 31px;
+	margin-bottom: 3px;
+	font-size: 14px;
+	font-family: 'Sans Serif',  Gilroy;
+	font-weight: bold;
+	color: #FF4414;
+}
+
+.poster-cards_date {
+	display: block;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	font-size: 14px;
+	font-family: 'Sans Serif',  Gilroy;
+	font-weight: bold;
+	color: #999999;
+}
+
+.poster-cards_ruble {
+	font-size: 14px;
+	font-family: 'Sans Serif',  Gilroy;
+	color: #999999;
+}
+
+.page-main_feedback {
+	width: 1400px;
+	margin: 0 auto;
+	padding-top: 50px;
+	border-top: 1px solid #D5D5D5;
+}
+
+.feedback_logoContainer {
+	display: flex;
+	height: 64px;
+	width: 434px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.logoContainer_logo {
+	width: 62px;
+	height: 64px;
+	margin-right: 24px;
+	background: url(img/17.png) no-repeat;
+}
+
+.feedback_logoContainer h3 {
+	margin: 0px;
+	padding-top: 15px;
+	height: 64px;
+	font-size: 30px;
+	font-weight: bold;
+	vertical-align: top;
 }
 
 .page-footer {
