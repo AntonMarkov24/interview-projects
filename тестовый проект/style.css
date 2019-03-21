@@ -69,22 +69,63 @@ a {
     font-weight: bold;
 }
 
-.trainingCourses_Popap {
+.Popap {
         display: none;
         width: 130px;
         height: 200px;
         margin-top: 15px;
-        background-color: #313E47;
+        background-color: #9FA3A5;
         border: 2px solid black;
+}
+
+.Popap span {
+       font-size: 15px;
+       color: white;
 }
 
 .PopapBtn:hover {
         background-color: white;
 }
 
-.trainingCourses_PopapOpen {
+.PopapBtn-programs:hover {
+        background-color: white;
+}
+
+.PopapOpen {
         display: block;
 }
+
+.PopapBtn {
+    position: absolute;
+    z-index: 3;
+	right: -30px;
+	top: 3px;
+	width: 9px;
+	height: 9px;
+	border-top: 2px solid white;
+	border-right: 2px solid white;
+	border-left: none;
+	border-bottom: none;
+	outline: none;
+	transform: rotate(135deg);
+}
+
+.PopapBtn-programs {
+        position: absolute;
+        z-index: 3;
+	right: 40px;
+	top: 33px;
+	width: 9px;
+	height: 9px;
+	border-top: 2px solid white;
+	border-right: 2px solid white;
+	border-left: none;
+	border-bottom: none;
+	outline: none;
+	transform: rotate(135deg);
+}
+
+
 
 .page-main_infcards {
 	position: relative;
@@ -257,6 +298,15 @@ a {
 	margin-left: -960px;
 	z-index: 1;
 	top: 0;
+}
+
+.swiper-container_inf {
+       width: 200px;
+       height: 200px;
+       position: absolute;
+       z-index: 3;
+       bottom: 30px;
+       font-size: 20px;
 }
 
 .page-main {
@@ -457,21 +507,6 @@ a {
         margin: 0 auto; 
 }
 
-.PopapBtn {
-    position: absolute;
-    z-index: 3;
-	right: -30px;
-	top: 3px;
-	width: 9px;
-	height: 9px;
-	border-top: 2px solid white;
-	border-right: 2px solid white;
-	border-left: none;
-	border-bottom: none;
-	outline: none;
-	transform: rotate(135deg);
-}
-
 .programs_PopapBtn {
     position: absolute;
     z-index: 3;
@@ -546,6 +581,7 @@ a {
 }
 
 .poster-cards_conteiner {
+    position: relative;
     width: 222px;
     min-height: 171px;
     padding-top: 21px;
@@ -554,15 +590,24 @@ a {
 }
 
 .poster-cards_conteiner a {
+        display: block;
+        overflow: hidden;
+        height: 100px;
 	font-size: 17px;
 	font-family: 'Sans Serif',  Gilroy;
 	font-weight: bold;
 	color: #1E1E1E;
 }
 
+.news-container_additionalInf {
+        position: absolute;
+        bottom: 0;
+        width: 222px;
+        background-color: blue;
+}
+
 .poster-cards_city {
 	display: block;
-	margin-top: 31px;
 	margin-bottom: 3px;
 	font-size: 14px;
 	font-family: 'Sans Serif',  Gilroy;
@@ -589,8 +634,11 @@ a {
 .page-main_feedback {
 	width: 1400px;
 	margin: 0 auto;
+	padding-bottom: 49px;
 	padding-top: 50px;
 	border-top: 1px solid #D5D5D5;
+	border-bottom: 1px solid #D5D5D5;
+	text-align: center;
 }
 
 .feedback_logoContainer {
@@ -617,14 +665,168 @@ a {
 	vertical-align: top;
 }
 
+.feedback_inf {
+	display: block;
+	margin-bottom: 37px;
+	font-size: 16px;
+	font-family: 'Cera Round Pro', Cera Round Pro DEMO;
+	color: #8B8B8B;
+}
+
+.userData_conteiner {
+        display: flex;
+	width: 1136px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.userData_name,
+.userData_tel,
+.userData_e-mail {
+	height: 86px;
+	width: 377px;
+	border: 1px solid #D5D5D5;
+	font-family: 'Cera Round Pro', Cera Round Pro DEMO;
+	font-size: 21px;
+}
+
+.userData_tel {
+	border-right: none;
+	border-left: none;
+}
+
+.userData_message {
+	display: block;
+	width: 1136px;
+	height: 160px;
+	margin: 0 auto;
+	border: 1px solid #D5D5D5;
+	font-family: 'Cera Round Pro', Cera Round Pro DEMO;
+	font-size: 21px;
+}
+
+.userData_submit {
+	width: 150px;
+	height: 43px;
+	background-color: #FE4124;
+	border: none;
+	color: white;
+	font-family: 'Cera Round Pro', Cera Round Pro DEMO;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.feedback_socialNetworks {
+	display: flex;
+	width: 603px;
+	height: 52px;
+}
+
+.socialNetworks_icon {
+	height: 52px;
+	width: 52px;
+	background: url(img/18.png) no-repeat;
+	margin-right: 21px;
+}
+
+.socialNetworks_name {
+	font-size: 17px;
+	font-family: 'Sans Serif',  Gilroy;
+	font-weight: bold;
+	color: #1E1E1E;
+}
+
+.socialNetworks_position {
+	font-family: 'Cera Round Pro', Cera Round Pro DEMO;
+	font-size: 15px;
+	color: #8B8B8B;
+}
+
+.feedback_socialNetworks a {
+    font-family: 'Cera Round Pro', Cera Round Pro DEMO;
+	font-size: 15px;
+	color: #FE4124;
+}
+
 .page-footer {
 	width: 1400px;
 	height: 500px;
-	background-color: #9FA3A5;
+	padding-top: 45px;
+	margin: 0 auto;
+}
+
+.footer-inf {
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.footer-inf_city {
+	font-size: 13px;
+	font-family: 'Sans Serif',  Gilroy;
+	font-weight: bold;
+}
+
+.footer-inf_address {
+	font-family: 'Cera Round Pro', Cera Round Pro DEMO;
+	font-size: 14px;
+}
+
+.footer-inf_tel {
+	font-family: 'Cera Round Pro', Cera Round Pro DEMO;
+	font-size: 14px;
 }
 
 .page-footer_CN {
+       display: flex;
+}
+
+.CN_F {
+       width: 30px;
+       height: 30px;
        background: url(img/10.png) no-repeat;
 }
 
+.CN_t {
+       width: 30px;
+       height: 30px;
+       background: url(img/10.png) -35px 0px no-repeat;
+}
 
+.CN_YouTube {
+       width: 45px;
+       height: 30px;
+       background: url(img/10.png) -70px 0px no-repeat;
+}
+
+.CN_vk {
+       width: 30px;
+       height: 30px;
+       background: url(img/10.png) -115px 0px no-repeat;
+}
+
+.page-footer_additionalInf {
+        display: flex;
+        justify-content: space-between;
+	width: 1400px;
+	margin-top: 66px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	border-top: 1px solid #D5D5D5;
+}
+
+.footer-inf_cards {
+       width: 350px;
+       height: 200px;
+}
+
+.page-footer_additionalInf a {
+	font-family: 'Cera Round Pro', Cera Round Pro DEMO;
+	font-size: 14px;
+	color: #1E1E1E;
+}
+
+.page-footer_additionalInf span {
+       font-family: 'Cera Round Pro', Cera Round Pro DEMO;
+       font-size: 14px;
+       color: #1E1E1E;
+}

@@ -33,9 +33,9 @@
                   <li>
                      <span>
                         Курсы обучения
-                        <div class="PopapBtn" id="PopapBtn">
+                        <div class="PopapBtn" id="PopapBtn_TrainingCourses">
                         </div>
-                        <div class="trainingCourses_Popap" id="trainingCourses_Popap">
+                        <div class="Popap" id="Popap_TrainingCourses">
                            <span>Курсы
                            </span>
                         </div>
@@ -44,7 +44,11 @@
                   <li>
                      <span>
                         Кампусы
-                        <div class="PopapBtn">
+                        <div class="PopapBtn" id="PopapBtn_capmuses">
+                        </div>
+                        <div class="Popap" id="Popap_capmuses">
+                           <span>Кампусы
+                           </span>
                         </div>
                      </span>
                   </li>
@@ -68,6 +72,11 @@
          </span>
       </div>
       <div class="swiper-container">
+         <div class="swiper-container_inf">
+            <span>Открылось новое направление:<br>Дизайн архетектурной среды
+            </span>
+            <a href="#">Кампус Флоренции</a>
+         </div>
          <div class="swiper-wrapper">
             <div class="swiper-slide">
                <img src="img/1.jpg">
@@ -178,23 +187,43 @@
             </span>
             <ul class="programs_search">
                <li><a href="#">Направления</a>
-                  <div class="programs_PopapBtn">
+                  <div class="PopapBtn-programs" id="PopapBtn_directions">
+                  </div>
+                  <div class="Popap" id="Popap_directions">
+                     <span>Направления
+                     </span>
                   </div>
                </li>
                <li><a href="#">Специальность</a>
-                  <div class="programs_PopapBtn">
+                  <div class="PopapBtn-programs" id="PopapBtn_specialty">
+                  </div>
+                  <div class="Popap" id="Popap_specialty">
+                     <span>Специальность
+                     </span>
                   </div>
                </li>
                <li><a href="#">Кампус</a>
-                  <div class="programs_PopapBtn">
+                  <div class="PopapBtn-programs" id="PopapBtn_campus">
+                  </div>
+                  <div class="Popap" id="Popap_campus">
+                     <span>Кампус
+                     </span>
                   </div>
                </li>
                <li><a href="#">Тип программы</a>
-                  <div class="programs_PopapBtn">
+                  <div class="PopapBtn-programs" id="PopapBtn_programs">
+                  </div>
+                  <div class="Popap" id="Popap_programs">
+                     <span>Тип программы
+                     </span>
                   </div>
                </li>
                <li><a href="#">Язык</a>
-                  <div class="programs_PopapBtn">
+                  <div class="PopapBtn-programs" id="PopapBtn_language">
+                  </div>
+                  <div class="Popap" id="Popap_language">
+                     <span>Язык
+                     </span>
                   </div>
                </li>
                <li><a href="#">Подобрать</a>
@@ -265,12 +294,14 @@
                <div class="poster-cards_conteiner">
                   <a href="#">Выставка "Частные школы и пансионы Канады"
                   </a>
-                  <span class="poster-cards_city">Киев
-                  </span>
-                  <span class="poster-cards_date">13 - 21 октября
-                  </span>
-                  <span class="poster-cards_ruble">Рублика: Встречи
-                  </span>
+                  <div class="news-container_additionalInf">
+                     <span class="poster-cards_city">Киев
+                     </span>
+                     <span class="poster-cards_date">13 - 21 октября
+                     </span>
+                     <span class="poster-cards_ruble">Рублика: Встречи
+                     </span>
+                  </div>
               </div>
             </div>
             <div class="poster-cards">
@@ -278,10 +309,12 @@
                <div class="poster-cards_conteiner">
                   <a href="#">Долгожданное открытие школы Marangoni в Мумбае
                   </a>
-                  <span class="poster-cards_date">13-21 октября
-                  </span>
-                  <span class="poster-cards_ruble">Рублика: Новости
-                  </span>
+                  <div class="news-container_additionalInf">
+                     <span class="poster-cards_date">13-21 октября
+                     </span>
+                     <span class="poster-cards_ruble">Рублика: Новости
+                     </span>
+                  </div>
                </div>
             </div>
             <div class="poster-cards">
@@ -289,12 +322,14 @@
                <div class="poster-cards_conteiner">
                   <a href="#">Выставка "Частные школы и пансионы Канады"
                   </a>
-                  <span class="poster-cards_city">Киев Прага Москва
-                  </span>
-                  <span class="poster-cards_date">13-21 октября
-                  </span>
-                  <span class="poster-cards_ruble">Рублика: Встречи
-                  </span>
+                  <div class="news-container_additionalInf">
+                     <span class="poster-cards_city">Киев Прага Москва
+                     </span>
+                     <span class="poster-cards_date">13-21 октября
+                     </span>
+                     <span class="poster-cards_ruble">Рублика: Встречи
+                     </span>
+                  </div>
                </div>
             </div>
             <div class="poster-cards">
@@ -302,20 +337,26 @@
                <div class="poster-cards_conteiner">
                   <a href="#">Выставка "Частные школы - пансионы и языковые центры за рубежом"
                   </a>
-                  <span class="poster-cards_city">Киев Прага Москва
-                  </span>
-                  <span class="poster-cards_date">15 октября
-                  </span>
-                  <span class="poster-cards_ruble">Рублика: Новости
-                  </span>
+                  <div class="news-container_additionalInf">
+                     <span class="poster-cards_date">15 октября
+                     </span>
+                     <span class="poster-cards_ruble">Рублика: Новости
+                     </span>
+                  </div>
                </div>
             </div>
             <div class="poster-cards">
                <img src="img/16.jpg">
-               <a href="#">Выставка зарубежного образования
-               </a>
-               <span class="poster-cards_date">15 октября Рублика: Новости
-               </span>
+               <div class="poster-cards_conteiner">
+                  <a href="#">Выставка зарубежного образования
+                  </a>
+                  <div class="news-container_additionalInf">
+                     <span class="poster-cards_date">15 октября
+                     </span>
+                     <span class="poster-cards_ruble">Рублика: Новости
+                     </span>
+                  </div>
+               </div>
             </div>
          </div>
          <div class="page-main_feedback">
@@ -325,15 +366,17 @@
                <h3>Поступайте с нами
                </h3>
             </div>
-            <span class="feedback_inf">
+            <span class="feedback_inf">Эксперты IQ Consultancy помогут выбрать подходящее учебное заведение и программу, оформить документы и визу
             </span>
-         </div>
+         
          <form action="" name="userData" id="userData">
-            <input type="text" placeholder="Ваше имя">
-            <input type="text" placeholder="Ваш Телефон">
-            <input type="text" placeholder="Ваш e-mail">
-            <input type="text" placeholder="Cообщение">
-            <input type="submit" class="question-submit" value="Отправить">
+            <div class="userData_conteiner">
+               <input class="userData_name" type="text" placeholder="Ваше имя">
+               <input class="userData_tel" type="tel" placeholder="Ваш Телефон">
+               <input class="userData_e-mail" type="text" placeholder="Ваш e-mail">
+            </div>
+            <input class="userData_message" type="text" placeholder="Cообщение">
+            <input class="userData_submit" type="submit" class="question-submit" value="Отправить">
          </form>
          <div class="feedback_socialNetworks">
             <div class="socialNetworks_icon">
@@ -342,13 +385,14 @@
             </span>
             <span class="socialNetworks_position">Руководитель отдела образования за рубежом
             </span>
+            <a href="#">e-bliman@iqconsultancy.ru
+            </a>
          </div>
-         <a href="#">e-bliman@iqconsultancy.ru
-         </a>
       </div>
+    </div>
       <div class="page-footer">
          <ul class="footer-inf">
-            <li>
+            <li class="footer-inf_cards">
               <span class="footer-inf_city">Москва
               </span>
               <span class="footer-inf_address">ул. Фадеева д.4<br>ЖК "Итальянский квартал"
@@ -356,7 +400,7 @@
               <span class="footer-inf_tel">+7(495)604-12-08
               </span>
             </li>
-            <li>
+            <li class="footer-inf_cards">
               <span class="footer-inf_city">Санкт-Петербург
               </span>
               <span class="footer-inf_address">ул. Жуковского д.3<br>литера "A" 3й этаж
@@ -364,7 +408,7 @@
               <span class="footer-inf_tel">+7(812)407-14-14
               </span>
             </li>
-            <li>
+            <li class="footer-inf_cards">
               <span class="footer-inf_city">Новосибирск
               </span>
               <span class="footer-inf_address">ул. Фрундзе д.5<br>офис 505
@@ -372,7 +416,7 @@
               <span class="footer-inf_tel">+7(383)383-01-51
               </span>
             </li>
-            <li>
+            <li class="footer-inf_cards">
               <span class="footer-inf_city">Казань
               </span>
               <span class="footer-inf_address">пр. Ибрагимова<br>д.58, офис 509
@@ -380,7 +424,7 @@
               <span class="footer-inf_tel">+7(843)212-26-22
               </span>
             </li>
-            <li>
+            <li class="footer-inf_cards">
               <span class="footer-inf_city">Уфа
               </span>
               <span class="footer-inf_address">ул. Карла Маркса д.37<br>корп.1, офис 407
@@ -388,7 +432,7 @@
               <span class="footer-inf_tel">+7(347)200-05-11
               </span>
             </li>
-            <li>
+            <li class="footer-inf_cards">
               <span class="footer-inf_city">Киев
               </span>
               <span class="footer-inf_address">ул. Богдана Хмельницкого<br>48 6й этаж
@@ -396,7 +440,7 @@
               <span class="footer-inf_tel">+380(44)332-21-12
               </span>
             </li>
-            <li>
+            <li class="footer-inf_cards">
               <span class="footer-inf_city">Прага
               </span>
               <span class="footer-inf_address">Zlatnicka 1123/7 Nove Mesto<br>Praha 1, 110 00 Czech Republic
@@ -406,6 +450,22 @@
             </li>
             <li>
                <div class="page-footer_CN">
+                  <a href="#">
+                     <div class="CN_F">
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="CN_t">
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="CN_YouTube">
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="CN_vk">
+                     </div>
+                  </a>
                </div>
             </li>
          </ul>
