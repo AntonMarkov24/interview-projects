@@ -43,9 +43,8 @@ a {
 }
 
 .header-inf {
-	display: flex;
-	flex-grow: 1;
 	height: 33px;
+        width: 1190px;
 	padding-top: 13px;
 	font-family: 'Sans Serif',  Gilroy;
 	font-size: 15px;
@@ -57,7 +56,7 @@ a {
 }
 
 .header-inf li:nth-child(2) {
-	padding-right: 381px;
+	padding-right: 480px;
 }
 
 .header-inf li:nth-child(3) {
@@ -66,6 +65,7 @@ a {
 }
 
 .header-inf li:nth-child(4) {
+    position: relative;
     font-weight: bold;
 }
 
@@ -92,6 +92,8 @@ a {
 }
 
 .PopapOpen {
+        position: absolute;
+        z-index: 8;
         display: block;
 }
 
@@ -125,7 +127,25 @@ a {
 	transform: rotate(135deg);
 }
 
+.PopapBtn_city {
+        position: absolute;
+        z-index: 6;
+	right: -35px;
+	top: 2px;
+	width: 9px;
+	height: 9px;
+	border-top: 2px solid white;
+	border-right: 2px solid white;
+	border-left: none;
+	border-bottom: none;
+	outline: none;
+	transform: rotate(135deg);
 
+}
+
+.PopapBtn_city:hover {
+        background-color: white;
+}
 
 .page-main_infcards {
 	position: relative;
@@ -287,9 +307,28 @@ a {
 
 .last-news {
 	position: absolute;
-	bottom: -20px;
+	bottom: -52px;
 	right: 0;
-	color: blue;
+	width: 1400px;
+	text-align: right;
+	padding-bottom: 16px;
+	border-bottom: 2px dotted #707070;
+	color: white;
+	 font-family: 'Sans Serif', Gilroy;
+	 font-size: 14px;
+}
+
+.last-news_icon {
+	display: inline-block;
+	background: url(img/19.png) no-repeat;
+	width: 14px;
+	height: 14px;
+	padding-left: 13px;
+}
+
+.last-news span {
+	vertical-align: top;
+	padding-right: 35px;
 }
 
 .swiper-container {
@@ -300,13 +339,37 @@ a {
 	top: 0;
 }
 
+.swiper1 {
+        position: absolute;
+        z-index: 8;
+        bottom: 60px !Important;
+        left: -570px !Important;
+        color: white;
+}
+
+
 .swiper-container_inf {
-       width: 200px;
-       height: 200px;
-       position: absolute;
+	   position: absolute;
+	   bottom: 115px;
+	   left: 290px;
+       width: 300px;
+       height: 83px;
        z-index: 3;
-       bottom: 30px;
        font-size: 20px;
+}
+
+.swiper-container_inf span {
+	 font-size: 19px;
+	 font-weight: bold;
+	 font-family: 'Sans Serif', Gilroy;
+	 color: white;
+}
+
+.swiper-container_inf a {
+	 font-size: 14px;
+	 font-weight: bold;
+	 font-family: 'Sans Serif', Gilroy;
+	 color: #FF4414;
 }
 
 .page-main {
@@ -364,13 +427,40 @@ a {
 	font-weight: bold;
 }
 
+
+
+.swiper-container2_infRight {
+	position: absolute;
+	top: -200px;
+	right: -233px;
+	width: 206px;
+	height: 152px;
+	overflow: visible;
+	background-color: green;
+	z-index: 10000;
+}
+
+.swiper-container2_infRight span {
+	font-size: 14px;
+	font-family: 'Marmelad Regular', Marmelad;
+	color: black;
+}
+
+
+
 .swiper-container2,
 .swiper-container3 {
 	position: relative;
-    overflow: hidden;
+        overflow: hidden;
 	margin: 0 auto;
 	width: 933px;
-	height: 427px;
+	height: 627px;
+}
+
+.swiper2 {
+        bottom: 10px !Important;
+        left: 370px !Important;
+        color: black;
 }
 
 .swiper-container3 {
@@ -603,7 +693,6 @@ a {
         position: absolute;
         bottom: 0;
         width: 222px;
-        background-color: blue;
 }
 
 .poster-cards_city {
@@ -631,13 +720,17 @@ a {
 	color: #999999;
 }
 
+.page-main_feedbackContainer {
+	margin-top: 65px;
+    border-top: 1px solid #D5D5D5;
+	border-bottom: 1px solid #D5D5D5;
+}
+
 .page-main_feedback {
 	width: 1400px;
 	margin: 0 auto;
 	padding-bottom: 49px;
 	padding-top: 50px;
-	border-top: 1px solid #D5D5D5;
-	border-bottom: 1px solid #D5D5D5;
 	text-align: center;
 }
 
@@ -674,6 +767,7 @@ a {
 }
 
 .userData_conteiner {
+	position: relative;
         display: flex;
 	width: 1136px;
 	margin: 0 auto;
@@ -684,7 +778,8 @@ a {
 .userData_tel,
 .userData_e-mail {
 	height: 86px;
-	width: 377px;
+	width: 350px;
+	padding-left: 27px;
 	border: 1px solid #D5D5D5;
 	font-family: 'Cera Round Pro', Cera Round Pro DEMO;
 	font-size: 21px;
@@ -697,15 +792,36 @@ a {
 
 .userData_message {
 	display: block;
-	width: 1136px;
-	height: 160px;
+	width: 1109px;
+	padding-left: 27px;
+	padding-bottom: 76px;
+	height: 84px;
 	margin: 0 auto;
 	border: 1px solid #D5D5D5;
 	font-family: 'Cera Round Pro', Cera Round Pro DEMO;
 	font-size: 21px;
 }
 
+.message_inf {
+	position: absolute;
+	bottom: 40px;
+	right: 400px;
+	font-family: 'Cera Round Pro', Cera Round Pro DEMO; 
+	font-size: 13px;
+	color: #707070;
+	opacity: 0.5;
+}
+
+form[name="userData"] {
+	display: block;
+	position: relative;
+	margin-bottom: 41px;
+}
+
 .userData_submit {
+	position: absolute;
+	bottom: 26px;
+	right: 160px;
 	width: 150px;
 	height: 43px;
 	background-color: #FE4124;
@@ -717,19 +833,32 @@ a {
 }
 
 .feedback_socialNetworks {
-	display: flex;
-	width: 603px;
-	height: 52px;
+	display: block;
+	text-align: left;
+	width: 650px;
+	height: 53px;
+	margin-left: 160px;
+	
 }
 
 .socialNetworks_icon {
+    display: inline-block;
 	height: 52px;
 	width: 52px;
 	background: url(img/18.png) no-repeat;
 	margin-right: 21px;
 }
 
+.socialNetworks_namePosition {
+	display: inline-block;
+	margin-top: 5px;
+	height: 47px;
+	width: 307px;
+	vertical-align: top;
+}
+
 .socialNetworks_name {
+	display: block;
 	font-size: 17px;
 	font-family: 'Sans Serif',  Gilroy;
 	font-weight: bold;
@@ -737,27 +866,42 @@ a {
 }
 
 .socialNetworks_position {
+	display: block;
+	text-align: left;
 	font-family: 'Cera Round Pro', Cera Round Pro DEMO;
 	font-size: 15px;
 	color: #8B8B8B;
 }
 
 .feedback_socialNetworks a {
+	display: inline-block;
+	margin-top: 25px;
+	vertical-align: top;
     font-family: 'Cera Round Pro', Cera Round Pro DEMO;
 	font-size: 15px;
 	color: #FE4124;
 }
 
 .page-footer {
-	width: 1400px;
-	height: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 1072px;
 	padding-top: 45px;
+	padding-left: 70px;
+	padding-right: 70px;
 	margin: 0 auto;
 }
 
 .footer-inf {
         display: flex;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 1190px;
+}
+
+.footer-inf2 {
+        display: flex;
+        justify-content: space-between;
+        width: 1190px;
 }
 
 .footer-inf_city {
@@ -778,6 +922,7 @@ a {
 
 .page-footer_CN {
        display: flex;
+       width: 160px;
 }
 
 .CN_F {
@@ -805,18 +950,33 @@ a {
 }
 
 .page-footer_additionalInf {
-        display: flex;
-        justify-content: space-between;
-	width: 1400px;
-	margin-top: 66px;
 	padding-top: 14px;
 	padding-bottom: 14px;
 	border-top: 1px solid #D5D5D5;
 }
 
+.page-footer_additionalInfContainer {
+	display: flex;
+        justify-content: space-between;
+        width: 1072px;
+        margin: 0 auto;
+}
+
 .footer-inf_cards {
-       width: 350px;
-       height: 200px;
+       width: 160px;
+       height: 107px;
+       padding-bottom: 66px;
+}
+
+.footer-inf_city {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 13px;
+}
+
+.footer-inf_tel {
+	display: block;
+	margin-top: 13px;
 }
 
 .page-footer_additionalInf a {

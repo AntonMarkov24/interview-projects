@@ -1,7 +1,8 @@
 var PopapBtn_TrainingCourses = document.getElementById('PopapBtn_TrainingCourses');
 var Popap_TrainingCourses = document.getElementById('Popap_TrainingCourses');
+var PopapClose = document.querySelector('.PopapOpen');
 
-PopapBtn_TrainingCourses.addEventListener('click', function() {Popap_TrainingCourses.classList.toggle("PopapOpen")})
+PopapBtn_TrainingCourses.addEventListener('click', function() {Popap_TrainingCourses.classList.toggle("PopapOpen");})
 
 
 var PopapBtn_capmuses = document.getElementById('PopapBtn_capmuses');
@@ -38,3 +39,9 @@ var PopapBtn_language = document.getElementById('PopapBtn_language');
 var Popap_language = document.getElementById('Popap_language');
 
 PopapBtn_language.addEventListener('click', function() {Popap_language.classList.toggle("PopapOpen")})
+
+
+var PopapBtn_SP = document.getElementById('PopapBtn_SP');
+var Popap_SP = document.getElementById('Popap_SP');
+
+PopapBtn_SP.addEventListener('click', function() {Popap_SP.classList.toggle("PopapOpen")})

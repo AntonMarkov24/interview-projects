@@ -25,6 +25,12 @@
                   <li><a href="#">+7(812)407-14-14</a>
                   </li>
                   <li><a href="#">Санкт петербург</a>
+                     <div class="PopapBtn_city" id="PopapBtn_SP">
+                        </div>
+                        <div class="Popap" id="Popap_SP">
+                           <span>город
+                           </span>
+                     </div>
                   </li>
                </ul>
             </div>
@@ -35,7 +41,7 @@
                         Курсы обучения
                         <div class="PopapBtn" id="PopapBtn_TrainingCourses">
                         </div>
-                        <div class="Popap" id="Popap_TrainingCourses">
+                        <div class="Popap PopapOpen" id="Popap_TrainingCourses">
                            <span>Курсы
                            </span>
                         </div>
@@ -66,10 +72,14 @@
                </ul>
             </div>
          </div>
-         <span class="last-news">Последнии новости: «Состоялась встреча с преподавателями в Кампусе Флоренции»
-         <span>
-         </span>12 июня 2017
-         </span>
+         <div class="last-news">
+            <div class="last-news_icon">
+            </div>
+            <span>Последнии новости: «Состоялась встреча с преподавателями в Кампусе Флоренции»
+            </span>
+            <span>
+            </span>12 июня 2017
+         </div>
       </div>
       <div class="swiper-container">
          <div class="swiper-container_inf">
@@ -81,12 +91,16 @@
             <div class="swiper-slide">
                <img src="img/1.jpg">
             </div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">
+               <img src="img/1.jpg">
+            </div>
+            <div class="swiper-slide">
+               <img src="img/1.jpg">
+            </div>
             <div class="swiper-slide">Slide 4</div>
             <div class="swiper-slide">Slide 5</div>
          </div>
-         <div class="swiper-pagination">
+         <div class="swiper-pagination swiper1">
          </div>
       </div>
       <div class="page-main">
@@ -98,19 +112,34 @@
             <a href="#">Обучение за рубежом с IQ Consultancy</a>
             <a href="#">Получить консультацию</a>
          </div>
+       
          <div class="swiper-container2">
+            <div class="swiper-container2_infRight">
+               <div class="infRight_icon">
+               </div>
+               <span>Открылось новое направление: Дизайн архитектурной среды
+               </span>
+               <span>Скрыть
+               </span>
+               
+            </div>
             <div class="swiper-wrapper">
                <div class="swiper-slide">
                   <img src="img/3.jpg">
                </div>
-               <div class="swiper-slide">Slide 2</div>
+               <div class="swiper-slide">
+                  <img src="img/3.jpg">
+               </div>
                <div class="swiper-slide">Slide 3</div>
                <div class="swiper-slide">Slide 4</div>
                <div class="swiper-slide">Slide 5</div>
             </div>
-            <div class="swiper-pagination">
-            </div>
+            <div class="swiper-pagination swiper2">
+               </div>
          </div>
+         
+      
+         
          <div class="page-main_infcards">
             <h4>Почему стоит выбрать именно нас:</h4>
             <div class="infcards_c1 mainCard">
@@ -359,6 +388,7 @@
                </div>
             </div>
          </div>
+         <div class="page-main_feedbackContainer">
          <div class="page-main_feedback">
             <div class="feedback_logoContainer">
                <div class="logoContainer_logo">
@@ -368,28 +398,33 @@
             </div>
             <span class="feedback_inf">Эксперты IQ Consultancy помогут выбрать подходящее учебное заведение и программу, оформить документы и визу
             </span>
-         
          <form action="" name="userData" id="userData">
             <div class="userData_conteiner">
                <input class="userData_name" type="text" placeholder="Ваше имя">
                <input class="userData_tel" type="tel" placeholder="Ваш Телефон">
                <input class="userData_e-mail" type="text" placeholder="Ваш e-mail">
             </div>
+            <span class="message_inf">Нажимая на кнопку, я подтверждаю свое согласие на «Политику в отношении обработки персональных данных»
+               </span>
             <input class="userData_message" type="text" placeholder="Cообщение">
             <input class="userData_submit" type="submit" class="question-submit" value="Отправить">
+             
          </form>
-         <div class="feedback_socialNetworks">
-            <div class="socialNetworks_icon">
-            </div>
-            <span class="socialNetworks_name">Егор Рудковский
-            </span>
-            <span class="socialNetworks_position">Руководитель отдела образования за рубежом
-            </span>
-            <a href="#">e-bliman@iqconsultancy.ru
-            </a>
-         </div>
+           <div class="feedback_socialNetworks">
+               <div class="socialNetworks_icon">
+               </div>
+               <div class="socialNetworks_namePosition">
+                  <span class="socialNetworks_name">Егор Рудковский
+                  </span>
+                   <span class="socialNetworks_position">Руководитель отдела образования за рубежом
+                   </span>
+               </div>
+               <a href="#">e-bliman@iqconsultancy.ru
+               </a>
+           </div>
       </div>
     </div>
+ </div>
       <div class="page-footer">
          <ul class="footer-inf">
             <li class="footer-inf_cards">
@@ -424,6 +459,8 @@
               <span class="footer-inf_tel">+7(843)212-26-22
               </span>
             </li>
+         </ul>
+         <ul class="footer-inf2">
             <li class="footer-inf_cards">
               <span class="footer-inf_city">Уфа
               </span>
@@ -470,17 +507,19 @@
             </li>
          </ul>
          <ul class="page-footer_additionalInf">
-            <li><a href="#">Правовая иформация</a>
-            </li>
-            <li><a href="#">Политика конфеденциальности</a>
-            </li>
-            <li><a href="#">Контактная информация</a>
-            </li>
-            <li>
-               <span>2001-2017 IQ Consultancy
-               </span>
-            </li>
-         </ul>
+            <div class="page-footer_additionalInfContainer">
+               <li><a href="#">Правовая иформация</a>
+               </li>
+               <li><a href="#">Политика конфеденциальности</a>
+               </li>
+               <li><a href="#">Контактная информация</a>
+               </li>
+               <li>
+                  <span>2001-2017 IQ Consultancy
+                  </span>
+              </li>
+            </div>
+        </ul>
       </div>
       <script src="swiper.min.js"></script>
       <script src="swiper.js"></script>

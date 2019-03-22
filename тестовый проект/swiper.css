@@ -33,16 +33,34 @@
       align-items: center;
     }
     .swiper-pagination-bullet {
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
+      margin-left: 8px !Important;
       text-align: center;
-      line-height: 20px;
-      font-size: 12px;
-      color:#000;
+      line-height: 30px;
+      font-size: 17px;
+      color: inherut;
       opacity: 1;
-      background: rgba(0,0,0,0.2);
+      background: none;
     }
-    .swiper-pagination-bullet-active {
-      color:#fff;
-      background: #007aff;
+.swiper1 > .swiper-pagination-bullet-active {
+      border: 1px solid white;
+      background: none; 
     }
+
+.swiper2 > .swiper-pagination-bullet-active {
+      border: 1px solid black;
+      background: none; 
+    }
+
+
+
+
+.swiper-pagination-bullet + .swiper-pagination-bullet-active {
+       border: 1px solid white;
+}
+
+
+.swiper2 > .swiper-pagination-bullet + .swiper-pagination-bullet-active {
+       border: 1px solid black;
+}
