@@ -454,12 +454,12 @@ a {
         overflow: hidden;
 	margin: 0 auto;
 	width: 933px;
-	height: 627px;
+	height: 477px;
 }
 
 .swiper2 {
-        bottom: 10px !Important;
-        left: 370px !Important;
+        bottom: -20px !Important;
+        left: 0px !Important;
         color: black;
 }
 
