@@ -333,10 +333,15 @@ a {
 
 .swiper-container {
 	position: absolute;
+	width: 1920px;
 	left:50%;
 	margin-left: -960px;
 	z-index: 1;
 	top: 0;
+}
+
+.swiper-container img{
+   width: 1920px;
 }
 
 .swiper1 {
@@ -373,6 +378,9 @@ a {
 }
 
 .page-main {
+	position: relative;
+	width: 1400px;
+	margin: 0 auto;
 	margin-top: 633px;
 }
 
@@ -429,15 +437,51 @@ a {
 
 
 
-.swiper-container2_infRight {
+.page-main_PopapRight {
 	position: absolute;
-	top: -200px;
-	right: -233px;
-	width: 206px;
-	height: 152px;
+	top: 350px;
+	right: -255px;
+	width: 125px;
+	padding-left: 55px;
+	padding-top: 23px;
+	padding-right: 26px;
+	height: 136px;
 	overflow: visible;
-	background-color: green;
-	z-index: 10000;
+	background-color: #FFF4AE;
+	z-index: 10;
+}
+
+.infRight_icon {
+	position: absolute;
+	z-index: 11;
+	left: 25px;
+	top: 25px;
+	width: 16px;
+	height: 16px;
+	background: url(img/11.png) no-repeat;
+}
+
+.PopapRight_text {
+	display: block;
+	margin-bottom: 24px;
+	font-size: 14px;
+	font-family: 'Marmelad Regular', Marmelad;
+	color: black;
+}
+
+.PopapRight_closeBtn {
+	font-size: 13px;
+	font-family: 'Cera Round Pro', Cera Round Pro DEMO;
+	color: #AAA482;
+	cursor: pointer;
+}
+
+.PopapRight_close {
+	width: 0px;
+	height: 50px;
+	padding-right: 0px;
+	padding-left: 55px;
+	overflow: hidden;
 }
 
 .swiper-container2_infRight span {

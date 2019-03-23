@@ -77,3 +77,17 @@ var PopapClose = document.querySelector('.PopapOpen');
 if (PopapClose !== "undefined" && PopapClose !== null) {PopapClose.classList.remove("PopapOpen")}
 if (PopapClose !== Popap_SP) {Popap_SP.classList.toggle("PopapOpen")}
                                                   })
+
+
+
+var infRight_icon = document.getElementById('infRight_icon');
+var PopapRight_closeBtn = document.getElementById('PopapRight_closeBtn');
+var pageMain_PopapRight = document.querySelector('.page-main_PopapRight');
+
+infRight_icon.addEventListener('click', function() {
+pageMain_PopapRight.classList.toggle("PopapRight_close")
+                                                    })
+
+PopapRight_closeBtn.addEventListener('click', function() {
+pageMain_PopapRight.classList.add("PopapRight_close")
+                                                    })
