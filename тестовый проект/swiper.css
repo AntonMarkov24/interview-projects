@@ -17,7 +17,8 @@
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #fff;
+      font-weight: bold;
+      background-color: transparent;
       /* Center slide text vertically */
       display: -webkit-box;
       display: -ms-flexbox;
@@ -44,19 +45,29 @@
       background: none;
     }
     .swiper1 > .swiper-pagination-bullet-active {
-      border: 1px solid white;
+      border: 2px solid white;
       background: none; 
     }
 
      .swiper2 > .swiper-pagination-bullet-active {
-      border: 1px solid black;
+      border: 2px solid black;
+      background: none; 
+    }
+
+    .swiper3 > .swiper-pagination-bullet-active {
+      border: 2px solid black;
       background: none; 
     }
 
     .swiper-pagination-bullet + .swiper-pagination-bullet-active {
-       border: 1px solid white;
+       border: 2px solid white;
      }
 
     .swiper2 > .swiper-pagination-bullet + .swiper-pagination-bullet-active {
-       border: 1px solid black;
+       border: 2px solid black;
      }
+
+     .swiper3 > .swiper-pagination-bullet + .swiper-pagination-bullet-active {
+       border: 2px solid black;
+     }
+

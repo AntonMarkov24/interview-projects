@@ -152,7 +152,7 @@ a {
 	width: 1400px;
         height: 532px;
 	margin: 0 auto;
-	margin-top: 152px;
+	margin-top: 102px;
         margin-bottom: 100px;
 }
 
@@ -344,11 +344,11 @@ a {
    width: 1920px;
 }
 
-.swiper1 {
+#swiper1 {
         position: absolute;
         z-index: 8;
-        bottom: 60px !Important;
-        left: -570px !Important;
+        bottom: 60px; 
+        left: -570px;
         color: white;
 }
 
@@ -492,27 +492,33 @@ a {
 
 
 
-.swiper-container2,
-.swiper-container3 {
+.swiper-container2 {
 	position: relative;
         overflow: hidden;
 	margin: 0 auto;
 	width: 933px;
-	height: 477px;
+	height: 500px;
+}
+
+.swiper-container3 {
+	position: relative;
+        overflow: hidden;
+	margin: 0 auto;
+	width: 1400px;
+	height: 667px;
 }
 
 .swiper2 {
-        bottom: -20px !Important;
+        bottom: 0px !Important;
         left: 0px !Important;
         color: black;
 }
 
-.swiper-container3 {
-	width: 1400px;
-	height: 567px;
+.swiper3 {
+
 }
+
 .swiper-container3_headlineContainer {
-   height: 145px;
    width: 1400px;
    margin: 0 auto;
 }
@@ -529,7 +535,6 @@ a {
 	justify-content: space-between;
 	width: 606px;
 	margin-left: 15px;
-	margin-bottom: 27px;
 	font-size: 17px;
 	font-weight: bold;
 	font-family: 'Sans Serif', Gotham Pro;
@@ -539,11 +544,23 @@ a {
 	color: black;
 }
 
+.page-main_programs {
+	margin-top: 22px;
+}
+
+.programs_headline {
+	margin-left: 33px;
+	font-family: 'Sans Serif', Gotham Pro;
+	font-size: 17px;
+	color: black;
+	font-weight: bold;
+}
+
 .programs_search {
 	width: 1400px;
 	height: 85px;
 	margin: 0 auto;
-	margin-top: 130px;
+	margin-top: 31px;
 	margin-bottom: 26px;
 	background-color: #313E47;
 }
@@ -1033,4 +1050,47 @@ form[name="userData"] {
        font-family: 'Cera Round Pro', Cera Round Pro DEMO;
        font-size: 14px;
        color: #1E1E1E;
+}
+
+
+@media (max-width: 1400px) {
+
+	.page-header {
+		width: 700px;
+	}
+
+	.swiper-container {
+		width: 700px;
+		height: 263px;
+		top: 127px;
+		margin-left: -350px;
+	}
+
+	.swiper-container img {
+		width: 700px;
+	}
+	
+	#swiper1 {
+		left: -230px;
+		bottom: 20px;
+	}
+
+	.swiper-container_inf {
+		left: 20px;
+		bottom: 50px;
+	}
+
+	.last-news {
+		width: 700px;
+		text-align: center;
+	}
+
+	.last-news span {
+		padding: 10px;
+	}
+
+	.logo-container {
+		width: 149px;
+		height: 91px;
+	}
 }
