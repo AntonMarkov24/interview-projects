@@ -1,3 +1,7 @@
+
+window.onload = function() {
+
+
 var PopapBtn_TrainingCourses = document.getElementById('PopapBtn_TrainingCourses');
 var Popap_TrainingCourses = document.getElementById('Popap_TrainingCourses');
 
@@ -91,3 +95,7 @@ pageMain_PopapRight.classList.toggle("PopapRight_close")
 PopapRight_closeBtn.addEventListener('click', function() {
 pageMain_PopapRight.classList.add("PopapRight_close")
                                                     })
+
+
+
+}
