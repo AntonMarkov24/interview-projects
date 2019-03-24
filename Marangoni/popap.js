@@ -96,6 +96,12 @@ PopapRight_closeBtn.addEventListener('click', function() {
 pageMain_PopapRight.classList.add("PopapRight_close")
                                                     })
 
+var mainNav_mobileBtn = document.getElementById('main-nav_mobileBtn');
+var mainNav = document.getElementById('main-nav');
 
+mainNav_mobileBtn.addEventListener('click', function() {
+mainNav.classList.toggle("main-nav--mobileOpen");
+                                                       })
 
 }
+
