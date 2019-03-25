@@ -89,11 +89,13 @@ var PopapRight_closeBtn = document.getElementById('PopapRight_closeBtn');
 var pageMain_PopapRight = document.querySelector('.page-main_PopapRight');
 
 infRight_icon.addEventListener('click', function() {
-pageMain_PopapRight.classList.toggle("PopapRight_close")
+pageMain_PopapRight.classList.toggle("PopapRight_close");
+pageMain_PopapRight.classList.toggle("PopapRight_mobileClose")
                                                     })
 
 PopapRight_closeBtn.addEventListener('click', function() {
-pageMain_PopapRight.classList.add("PopapRight_close")
+pageMain_PopapRight.classList.add("PopapRight_close");
+pageMain_PopapRight.classList.add("PopapRight_mobileClose")
                                                     })
 
 var mainNav_mobileBtn = document.getElementById('main-nav_mobileBtn');
